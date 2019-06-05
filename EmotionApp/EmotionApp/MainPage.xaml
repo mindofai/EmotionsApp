@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:EmotionApp"
     BackgroundColor="#137349">
-    <ScrollView>
+    <Grid>
         <StackLayout
             Padding="10"
             HorizontalOptions="CenterAndExpand"
@@ -42,5 +42,15 @@
                 TextColor="White"
                 VerticalTextAlignment="Center" />
         </StackLayout>
-    </ScrollView>
+        <ActivityIndicator
+            x:Name="activityIndicator"
+            BackgroundColor="White"
+            HeightRequest="100"
+            IsEnabled="True"
+            IsRunning="True"
+            IsVisible="False"
+            Opacity="0.6"
+            WidthRequest="100"
+            Color="#0a3a25" />
+    </Grid>
 </ContentPage>
